@@ -110,11 +110,11 @@ int skaicius2 = int.Parse(Console.ReadLine());
 
 if(skaicius1 == skaicius2)
 {
-  Console.WriteLine($"skaicius1 ir skaicius2 yra lygus.");
+  Console.WriteLine("skaicius1 ir skaicius2 yra lygus.");
 }
 else 
 {
-  Console.WriteLine($"skaicius1 ir skaicius2 yra nelygus.");
+  Console.WriteLine("skaicius1 ir skaicius2 yra nelygus.");
 }
 
 Console.ReadLine();
