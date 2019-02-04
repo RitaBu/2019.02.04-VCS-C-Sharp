@@ -16,7 +16,7 @@
 Console.WriteLine("Iveskite teksta:");
 
 //nuskaitome tekstą iš Consolės ir pasidedame į kintamąjį
-var tekstas = Console.ReadLine();
+string tekstas = Console.ReadLine();
 
 //išvedame tą, ką nuskaitėme ir pasidėjome į kintąmąjį
 Console.WriteLine(tekstas);
