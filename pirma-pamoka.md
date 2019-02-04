@@ -30,17 +30,18 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Iveskite varda:");
-var vardas = Console.ReadLine();
+string vardas = Console.ReadLine();
 
 Console.WriteLine("Iveskite pavarde:");
-var pavarde = Console.ReadLine();
+string pavarde = Console.ReadLine();
 
 Console.WriteLine("Iveskite amziu:");
-var amzius = Console.ReadLine();
+string amzius = Console.ReadLine();
 
 Console.WriteLine(vardas);
 Console.WriteLine(pavarde);
 Console.WriteLine(amzius);
+
 Console.ReadLine();
 ```
 3. Parašyti programą, kuri prašo įvesti apskritimo spindulį ir pagal jį suskaičiuoja jo ilgį ir plotą.
@@ -64,14 +65,14 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Iveskite atstuma metrais:");
-var atstumasMetraisTekstas = Console.ReadLine();
-var atstumasMetrais = double.Parse(atstumasTekstas);
+string atstumasMetraisTekstas = Console.ReadLine();
+double atstumasMetrais = double.Parse(atstumasTekstas);
 
 Console.WriteLine("Iveskite laika sekundemis:");
-var laikasSekundemisTekstas = Console.ReadLine();
-var laikasSekundemis = double.Parse(laikasSekundemisTekstas);
+string laikasSekundemisTekstas = Console.ReadLine();
+double laikasSekundemis = double.Parse(laikasSekundemisTekstas);
 
-var greitis = (atstumasMetrais / 1000) / (laikasSekundemis/3600);
+double greitis = (atstumasMetrais / 1000) / (laikasSekundemis/3600);
 
 Console.WriteLine("Greitis km/h: ", greitis);
 
@@ -84,13 +85,13 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Koks jusu vardas?");
-var vardas = Console.ReadLine();
+string vardas = Console.ReadLine();
 
 Console.WriteLine("Kokia jusu pavarde?");
-var pavarde = Console.ReadLine();
+string pavarde = Console.ReadLine();
 
 Console.WriteLine("Kuriame mieste gimete?");
-var miestas = Console.ReadLine();
+string miestas = Console.ReadLine();
 
 Console.WriteLine(vardas + " " + pavarde + " deginasi " + miestas);
 
@@ -102,10 +103,10 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Iveskite pirma skaiciu:");
-var skaicius1 = int.Parse(Console.ReadLine());
+int skaicius1 = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Iveskite antra skaiciu:");
-var skaicius2 = int.Parse(Console.ReadLine());
+int skaicius2 = int.Parse(Console.ReadLine());
 
 if(skaicius1 == skaicius2)
 {
