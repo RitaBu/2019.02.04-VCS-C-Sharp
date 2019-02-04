@@ -48,13 +48,13 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Iveskite apskritimo spinduli:");
-var spindulysTekstas = Console.ReadLine();
+string spindulysTekstas = Console.ReadLine();
 
 //pasiverciame nuskaitytą tekstą į skaičių, nes negalime teksto dauginti ir dalinti
-var spindulys = int.Parse(spindulysTekstas);
+double spindulys = int.Parse(spindulysTekstas);
 
-var ilgis = 2 * Math.PI * spindulys;
-var plotas = Math.PI * spindulys * spindulys;
+double ilgis = 2 * Math.PI * spindulys;
+double plotas = Math.PI * spindulys * spindulys;
 
 Console.WriteLine("Apskritimo ilgis: " + ilgis);
 Console.WriteLine("Apskritimo plotas: " + plotas);
