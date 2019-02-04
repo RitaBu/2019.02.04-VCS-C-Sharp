@@ -1,18 +1,18 @@
 ```c#
-//uzkomentuota eilute
+//užkomentuota eilutė
 
 /* 
-  uzkomentuotas kodo blokas
+  užkomentuotas kodo blokas
 */
 
-//paselectinus norimas eilutes ir CTRL + K + C jas visas uzkomentuoja (windows)
+//paselectinus norimas eilutes ir CTRL + K + C jas visas užkomentuoja (windows)
 //paselectinus norimas eilutes ir CTRL + K + U jas visas atkomentuoja (windows)
 ```
 
 1. Parašyti programą, kuri nuskaito įvestą tekstą ir atspausdina jį ekrane. Atspausdintus duomenis rodyti, kol nepaspaudžiamas ENTER. 
 
 ```c#
-//isvedame tekstą į Console
+//išvedame tekstą į Console
 Console.WriteLine("Iveskite teksta:");
 
 //nuskaitome tekstą iš Consolės ir pasidedame į kintamąjį
@@ -38,7 +38,9 @@ var pavarde = Console.ReadLine();
 Console.WriteLine("Iveskite amziu:");
 var amzius = Console.ReadLine();
 
-Console.WriteLine($"{vardas} {pavarde} {amzius}");
+Console.WriteLine(vardas);
+Console.WriteLine(pavarde);
+Console.WriteLine(amzius);
 Console.ReadLine();
 ```
 3. Parašyti programą, kuri prašo įvesti apskritimo spindulį ir pagal jį suskaičiuoja jo ilgį ir plotą.
@@ -69,7 +71,7 @@ var laikasSekundemis = double.Parse(laikasSekundemisTekstas);
 
 var greitis = (atstumasMetrais / 1000) / (laikasSekundemis/3600);
 
-Console.WriteLine($"Greitis km/h: ", greitis);
+Console.WriteLine("Greitis km/h: ", greitis);
 
 Console.ReadLine();
 ```
@@ -105,11 +107,11 @@ var skaicius2 = int.Parse(Console.ReadLine());
 
 if(skaicius1 == skaicius2)
 {
-  Console.WriteLine($"{skaicius1} ir {skaicius2} yra lygus.");
+  Console.WriteLine($"skaicius1 ir skaicius2 yra lygus.");
 }
 else 
 {
-  Console.WriteLine($"{skaicius1} ir {skaicius2} yra nelygus.");
+  Console.WriteLine($"skaicius1 ir skaicius2 yra nelygus.");
 }
 
 Console.ReadLine();
