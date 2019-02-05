@@ -1,5 +1,5 @@
 
-## Kartojam
+## Sąlygos
 
 1. Parašyti programą, kuri prašo įvesti 3 skaičius ir nustato didžiausią iš jų.
 
@@ -263,9 +263,67 @@ Console.WriteLine(skaicius1 + " " + operacija + " " + skaicius2 + " = " + rezult
 Console.ReadLine();
 ```
 
-## Nauja tema
+## Ciklai
 
-1. Parašyti programą naudojant `while` ciklą, kuri nuskaitinėja įvestus skaičius tol, kol jų suma nėra daugiau 50.
+1. Parašyti programą naudojant while ciklą, kuri 20 kartų išveda jūsų pasirinktą sakinį į Console.
+
+```c#
+int i = 0;
+
+while(i < 20)
+{
+    Console.WriteLine("Labas");
+    i++;
+}
+```
+2. Parašykite programą naudojant while ciklą, kuri išveda į Console iš naujos eilutės skaičius nuo 1 iki 25.
+
+```c#
+int i = 1;
+
+while(i <= 25)
+{
+    Console.WriteLine(i);
+    i++;
+}
+```
+
+3. Parašykite programą su amžinu ciklu naudojant while ciklą, kuri amžinai išvedinėtų vis didėjanti skaičių nuo 1 iki begalybės.
+
+```c#
+int i = 1;
+
+while(true)
+{
+    Console.WriteLine(i);
+    i++;
+}
+```
+
+4. Parašykite programą naudojant while ciklą, kuri nuskaitinėja įvestus skaičius ir juos sumuoja tol, kol nebūna įvestas neigiamas skaičius. Programos pabaigoje turi išvesti gautą sumą.
+
+```c#
+int suma = 0;
+bool sustoti = false;
+
+while(!sustoti)
+{
+    Console.WriteLine("Iveskite skaiciu:");
+    int skaicius = int.Parse(Console.ReadLine());
+    if(skaicius >= 0)
+    {
+        suma += skaicius;
+    }
+    else
+    {
+        sustoti = true;
+    }
+}
+
+Console.WriteLine("suma = " + suma);
+```
+
+5. Parašyti programą naudojant `while` ciklą, kuri nuskaitinėja įvestus skaičius tol, kol jų suma nėra daugiau 50.
 
 ```c#
 int sum = 0;
@@ -278,7 +336,7 @@ while(sum < 50)
 Console.ReadLine();
 ```
 
-2. Parašyti programą naudojant `while` ciklą, kuri nuskaitinėja paspaustus klavišus ir išveda jų pavadinimus tol, kol nepaspaudžiamas ESC klavišas. 
+6. Parašyti programą naudojant `while` ciklą, kuri nuskaitinėja paspaustus klavišus ir išveda jų pavadinimus tol, kol nepaspaudžiamas ESC klavišas. 
 
 ```c#
 while(true) 
@@ -295,7 +353,7 @@ while(true)
 }
 ```
 
-3. Parašyti programą naudojant `for` ciklą, kuri suskaičiuoja pirmų 10 natūraliųjų skaičių sumą.
+7. Parašyti programą naudojant `for` ciklą, kuri suskaičiuoja pirmų 10 natūraliųjų skaičių sumą.
 
 ```c#
 int sum = 0;
