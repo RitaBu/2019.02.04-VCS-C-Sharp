@@ -355,12 +355,26 @@ while(true)
 7. Parašykite programą naudojant for ciklą, kuri paprašo įvesti teigiamą skaičių n ir iš eilės atspausdina skaičius nuo 1 iki n.
 
 ```c#
+Console.WriteLine("Iveskite skaiciu:");
+int n = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= n; i++)
+{
+    Console.WriteLine(i);
+}
 ```
 
 8. Parašyti programą naudojant for ciklą, kuri paprašo įvesti natūralųjį skaičių ir atspausdina vienoje eilutėje 10 naturaliųjų skaičių iš eilės pradedant nuo įvesto skaičiaus, pvz.: įvedus skaičių 5, turėtų atspausdinti šitaip - 
 ```5 6 7 8 9 10 11 12 13 14```
 
 ```c#
+Console.WriteLine("Iveskite skaiciu:");
+int n = int.Parse(Console.ReadLine());
+
+for (int i = n; i < n + 10; i++)
+{
+    Console.Write(i + " ");
+}
 ```
 
 9. Parašyti programą naudojant `for` ciklą, kuri suskaičiuoja pirmų 10 natūraliųjų skaičių sumą.
