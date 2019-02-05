@@ -1,7 +1,35 @@
 
 ## Kartojam
 
-1. Parašyti programą, kuri nuskaito įvestą skaičių ir patikrina ar jis yra lyginis ar nelyginis.
+1. Parašyti programą, kuri prašo įvesti 3 skaičius ir nustato didžiausią iš jų.
+
+```c#
+Console.WriteLine("Iveskite pirma skaiciu:");
+var skaicius1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite antra skaiciu:");
+var skaicius2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite trecia skaiciu:");
+var skaicius3 = int.Parse(Console.ReadLine());
+
+if(skaicius1 > skaicius2 && skaicius1 > skaicius3)
+{
+  Console.WriteLine($"{skaicius1} yra didziausias.");
+}
+else if(skaicius2 > skaicius1 && skaicius2 > skaicius3)
+{
+  Console.WriteLine($"{skaicius2} yra didziausias.");
+}
+else 
+{
+  Console.WriteLine($"{skaicius3} yra didziausias.");
+}
+
+Console.ReadLine();
+```
+
+2. Parašyti programą, kuri nuskaito įvestą skaičių ir patikrina ar jis yra lyginis ar nelyginis.
 
 ```c#
 Console.WriteLine("Iveskite naturaluji skaiciu: ");
@@ -24,12 +52,53 @@ galima ir šitaip, išnaudojant [trinarį operatorių](https://docs.microsoft.co
 Console.WriteLine("Iveskite naturaluji skaiciu: ");
 int skaicius = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"Skaicius yra { (skaicius % 2 == 0 ? "lyginis" : "nelyginis") } ");
+Console.WriteLine("Skaicius yra " + (skaicius % 2 == 0 ? "lyginis" : "nelyginis"));
 
 Console.ReadLine();
 ```
 
-2. Parašyti programą, kuri nuskaito savaitės dienos numerį ir atspausdina jos žodinį pavadinimą ekrane.
+3. Parašyti programą, kuri:
+* paprašo vartotojo įvesti du skaičius - x ir y koordinates
+* Nuskaito šias koordinates ir išsisaugo kintamuosiuose
+* Tuomet pagal gautas koordinates turi išvesti, kuriame koordinačių sistemos ketvirtyje tos koordinatės yra.
+
+6. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. (10 – puiku, 9-8 – labai gerai, 7-6- gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
+
+```c#
+Console.WriteLine("Iveskite vaiko pazymi:");
+var pazymys = int.Parse(Console.ReadLine());
+
+switch(pazymys) 
+{
+  case 10:
+    Console.WriteLine("Puiku!");
+    break;
+  case 9:
+  case 8:
+    Console.WriteLine("Laba gerai");
+    break;
+  case 7:
+  case 6:
+    Console.WriteLine("Gerai");
+    break;
+  case 5:
+    Console.WriteLine("Vidutiniškai");
+    break;
+  case 4:
+    Console.WriteLine("Teigiamas");
+    break;
+  case 3: case 2: case 1: //kad uzimtu maziau vietos, galime case surasyt i viena eilute sitaip
+    Console.WriteLine("Labai blogai!");
+    break;
+  default:
+    Console.WriteLine("Tokio pazymio nera vertinimo sistemoje.");
+    break;
+}
+
+Console.ReadLine();
+```
+
+7. Parašyti programą, kuri nuskaito savaitės dienos numerį ir atspausdina jos žodinį pavadinimą ekrane.
 
 ```c#
 Console.WriteLine("Iveskite savaites dienos numeri: ");
@@ -65,7 +134,7 @@ switch(savDienosNr){
 Console.ReadLine();
 ```
 
-3. Parašyti programą kalkuliatorių, kuri nuskaito 2 skaičius, nuskaito matematinį veiksmą, atlieka veiksmą ir atspausdina rezultatą ekrane tokiu formatu:
+8. Parašyti programą kalkuliatorių, kuri nuskaito 2 skaičius, nuskaito matematinį veiksmą, atlieka veiksmą ir atspausdina rezultatą ekrane tokiu formatu:
 ```c# 
 {pirmas skaicius} {matematinis veiksmas} {antras skaičius} = {rezultatas}
 ```
