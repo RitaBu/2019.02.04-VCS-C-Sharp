@@ -91,6 +91,19 @@ else
 Jei amžius yra mažesnis arba lygus 10 arba yra didesnis už 65, tai turi pranešti vartotojui, kad bilietas kainuos 5 eurus.
 Kitu atveju, turi pranešti, kad bilietas kainuos 10 eurų.
 
+```c#
+Console.WriteLine("Iveskite amziu:");
+int amzius = int.Parse(Console.ReadLine());
+
+if(amzius <= 10 || amzius > 65)
+{
+    Console.WriteLine("Bilieto kaina - 5 eurai");
+}
+else
+{
+    Console.WriteLine("Bilieto kaina - 10 euru");
+}
+```
 
 5. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. (10 – puiku, 9-8 – labai gerai, 7-6- gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
 
