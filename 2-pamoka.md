@@ -62,6 +62,31 @@ Console.ReadLine();
 * Nuskaito šias koordinates ir išsisaugo kintamuosiuose
 * Tuomet pagal gautas koordinates turi išvesti, kuriame koordinačių sistemos ketvirtyje tos koordinatės yra.
 
+```c#
+Console.WriteLine("Iveskite x:");
+int x = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite y:");
+int y = int.Parse(Console.ReadLine());
+
+if(x > 0 && y > 0)
+{
+    Console.WriteLine("Pirmas kvadrantas.");
+}
+else if (x < 0 && y > 0)
+{
+    Console.WriteLine("Antras kvadrantas.");
+}
+else if (x < 0 && y < 0)
+{
+    Console.WriteLine("Trecias kvadrantas.");
+}
+else
+{
+    Console.WriteLine("Ketvirtas kvadrantas");
+}
+```
+
 4. Parašyti programą, kuri paprašo įvesti savo amžių ir pagal jį grąžina kino teatro bilieto kainą. 
 Jei amžius yra mažesnis arba lygus 10 arba yra didesnis už 65, tai turi pranešti vartotojui, kad bilietas kainuos 5 eurus.
 Kitu atveju, turi pranešti, kad bilietas kainuos 10 eurų.
