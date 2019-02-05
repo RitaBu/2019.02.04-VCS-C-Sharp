@@ -51,7 +51,7 @@ Console.WriteLine("Iveskite apskritimo spinduli:");
 string spindulysTekstas = Console.ReadLine();
 
 //pasiverciame nuskaitytą tekstą į skaičių, nes negalime teksto dauginti ir dalinti
-double spindulys = int.Parse(spindulysTekstas);
+double spindulys = double.Parse(spindulysTekstas);
 
 double ilgis = 2 * Math.PI * spindulys;
 double plotas = Math.PI * spindulys * spindulys;
