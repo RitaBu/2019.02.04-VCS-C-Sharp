@@ -62,7 +62,12 @@ Console.ReadLine();
 * Nuskaito šias koordinates ir išsisaugo kintamuosiuose
 * Tuomet pagal gautas koordinates turi išvesti, kuriame koordinačių sistemos ketvirtyje tos koordinatės yra.
 
-6. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. (10 – puiku, 9-8 – labai gerai, 7-6- gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
+4. Parašyti programą, kuri paprašo įvesti savo amžių ir pagal jį grąžina kino teatro bilieto kainą. 
+Jei amžius yra mažesnis arba lygus 10 arba yra didesnis už 65, tai turi pranešti vartotojui, kad bilietas kainuos 5 eurus.
+Kitu atveju, turi pranešti, kad bilietas kainuos 10 eurų.
+
+
+5. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. (10 – puiku, 9-8 – labai gerai, 7-6- gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
 
 ```c#
 Console.WriteLine("Iveskite vaiko pazymi:");
@@ -98,7 +103,7 @@ switch(pazymys)
 Console.ReadLine();
 ```
 
-7. Parašyti programą, kuri nuskaito savaitės dienos numerį ir atspausdina jos žodinį pavadinimą ekrane.
+6. Parašyti programą, kuri nuskaito savaitės dienos numerį ir atspausdina jos žodinį pavadinimą ekrane.
 
 ```c#
 Console.WriteLine("Iveskite savaites dienos numeri: ");
@@ -134,7 +139,7 @@ switch(savDienosNr){
 Console.ReadLine();
 ```
 
-8. Parašyti programą kalkuliatorių, kuri nuskaito 2 skaičius, nuskaito matematinį veiksmą, atlieka veiksmą ir atspausdina rezultatą ekrane tokiu formatu:
+7. Parašyti programą kalkuliatorių, kuri nuskaito 2 skaičius, nuskaito matematinį veiksmą, atlieka veiksmą ir atspausdina rezultatą ekrane tokiu formatu:
 ```c# 
 {pirmas skaicius} {matematinis veiksmas} {antras skaičius} = {rezultatas}
 ```
