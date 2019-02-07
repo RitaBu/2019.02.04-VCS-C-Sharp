@@ -1,3 +1,5 @@
+### ``for`` ciklas
+
 1. Parašyti programą naudojant for ciklą, kuri prašo įvesti natūralųjį skaičių ir atspausdina visus žemesnius natūraliuosius skaičius mažėjančia tvarka.
 
 ```C#
@@ -48,7 +50,7 @@ for (int i = 1; i <= aukstis; i++)
     Console.WriteLine();
 }
 ```
-
+4. 
 
 
 ```C#
