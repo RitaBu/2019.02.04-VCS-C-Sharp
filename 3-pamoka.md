@@ -25,10 +25,12 @@ for (int i = 1; i <= 10; i++)
 ```
 3. Parašyti programą naudojant for ciklą, kuri prašo įvesti piramidės aukštį ir atspausdina skaičių piramidę tokiu formatu:
 
-```1
+```
+1
 2 3
 4 5 6
-7 8 9 10```
+7 8 9 10
+```
 
 ```C#
 Console.WriteLine("Iveskite piramides auksti:");
