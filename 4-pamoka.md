@@ -73,10 +73,24 @@ else
 }
 ```
 
-6. Pirmosios olimpinės ţaidynės įvyko 1896 metais ir toliau organizuojamos kas ketveri metai. Jei žaidynės neįvyksta, tie metai vis tiek laikomi olimpiniais, o žaidynėms skiriamas eilės numeris. Parašykite programą, kuri surastų m-tųjų metų olimpinių žaidynių numerį n. Jei metai neolimpiniai, turi būti spausdinama „Metai neolimpiniai“. ‘
+6. Pirmosios olimpinės žaidynės įvyko 1896 metais ir toliau organizuojamos kas ketveri metai. Jei žaidynės neįvyksta, tie metai vis tiek laikomi olimpiniais, o žaidynėms skiriamas eilės numeris. Parašykite programą, kuri surastų m-tųjų metų olimpinių žaidynių numerį n. Jei metai neolimpiniai, turi būti spausdinama „Metai neolimpiniai“. ‘
 
 ```c#
+int pirmosOlimpines = 1986;
 
+Console.WriteLine("Iveskite metus:");
+int metai = int.Parse(Console.ReadLine());
+
+if(metai >= pirmosOlimpines)
+{
+    int skirtumas = metai - pirmosOlimpines;
+    if (skirtumas % 4 == 0)
+    {
+        int kelintos = skirtumas / 4 + 1;
+        Console.WriteLine("Tai olimpiniai metai. Olimpiniu zaidyniu numeris: " + kelintos);
+    }
+    else Console.WriteLine("Metai nera olimpiniai.");
+}
 ```
 
 ### ```while``` ciklai
@@ -84,18 +98,56 @@ else
 1. Parašykite programą, kuri suskaičiuotų, kiek skaitmenų turi duotas skaičius a.
 
 ```c#
+int a = 52410;
+int skaitmenuSk = 0;
+
+while(a > 0)
+{
+    a = a / 10;
+    skaitmenuSk++;
+}
+
+Console.WriteLine(skaitmenuSk);
 ```
 
 2. Martynas labai mėgsta saldainius. Mamos slėptuvėje jis rado m saldainių. Pirmą dieną jis suvalgė 1 saldainį, antrąją – 2, trečiąją – 3. Kiekvieną kitą dieną jis suvalgydavo vienu saldainiu daugiau negu prieš tai buvusią dieną. Per kelias dienas d Martynas suvalgys visus saldainius? Paskutinei dienai gali likti mažiau saldainių. 
 Pvz.: Kai m = 11, turėtumėte gauti d = 5.
 
 ```c#
+int m = 11;
+int d = 0;
+
+while(m > 0)
+{
+    d++;
+    m = m - d;
+}
+
+Console.WriteLine(d);
 ```
 
 3. Parašykite programą klaviatūra renkamos skaičių sekos aritmetiniam vidurkiui rasti. Sekos pabaigos požymis – nulis. 
 Pvz.: Jei seka yra 2, -6, 5, 9, -1, tai jos aritmetinis vidurkis yra 1.8.
 
 ```c#
+int count = 0;
+double suma = 0;
+
+
+while (true)
+{
+    Console.WriteLine("Iveskite skaiciu:");
+    int sk = int.Parse(Console.ReadLine());
+
+    if (sk == 0) 
+    {
+        break;
+    }
+    suma += sk;
+    count++;
+}
+
+Console.WriteLine(suma/count);
 ```
 
 4. Parašykite programą klaviatūra renkamai teigiamų skaičių sekai analizuoti: suskaičiuokite, kiek yra šioje sekoje lyginių ir nelyginių skaičių. Sekos pabaigos požymis – nulis. 
@@ -105,20 +157,20 @@ Pvz.: Jei seka yra 2, 6, 5, 9, 1, 7, tai sekoje yra 2 lyginiai skaičiai ir 4 ne
 int lyginiuSk = 0;
 int nelyginiuSk = 0;
 
-
-while ((lyginiuSk + nelyginiuSk) < 6)
+while (true)
 {
     Console.WriteLine("Iveskite skaiciu:");
     int sk = int.Parse(Console.ReadLine());
 
-
-    bool rez = sk % 2 == 0;
-
-    if(sk % 2 == 0)
+    if (sk == 0) 
+    {
+        break;
+    }
+    if(sk %  2 == 0)
     {
         lyginiuSk++;
     }
-    else 
+    else
     {
         nelyginiuSk++;
     }
@@ -127,6 +179,3 @@ while ((lyginiuSk + nelyginiuSk) < 6)
 Console.WriteLine("Lyginiu sk: " + lyginiuSk);
 Console.WriteLine("Nelyginiu sk: " + nelyginiuSk);
 ```
-
-
-
