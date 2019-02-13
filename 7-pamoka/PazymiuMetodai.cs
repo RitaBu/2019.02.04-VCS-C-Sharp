@@ -1,20 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @RitaBu Sign out
-1
-0 0 RitaBu/2018.07.16-VCS-C-Sharp
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-2018.07.16-VCS-C-Sharp/4-pamoka/PazymiuMetodai.cs
-c12fc07  on 7 Aug 2018
-@RitaBu RitaBu Rename PazymiuMetodai.cs to 4-pamoka/PazymiuMetodai.cs
-     
-67 lines (54 sloc)  1.56 KB
 using System;
 using System.Collections.Generic;
 
