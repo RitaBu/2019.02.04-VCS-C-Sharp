@@ -98,6 +98,17 @@ Console.WriteLine("Faktorialas: " + faktorialas);
 8. Parašykite programą, kuri suskaičiuotų, kiek yra triženklių skaičių, besidalinančių iš keturių ir išvestų juos į ekraną.
 
 ```c#
+var besidalinanciuIs4Sk = 0;
+
+for (int i = 100; i <= 999; i++)
+{
+    if(i % 4 == 0)
+    {
+        besidalinanciuIs4Sk++;
+    }
+}
+
+Console.WriteLine("Trizenkliu skaiciu, nesidalinanciu is keturiu yra: " + besidalinanciuIs4Sk);
 ```
 
 9. Parašykite programą, kuri:
@@ -107,11 +118,72 @@ Console.WriteLine("Faktorialas: " + faktorialas);
 * Surastų, kiek buvo neigiamų skaičių ir kiek teigiamų.
 
 ```c#
+int[] skaiciai = new int[5];
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Iveskite skaiciu:");
+    int skaicius = int.Parse(Console.ReadLine());
+    skaiciai[i] = skaicius;
+}
+
+double suma = 0;
+int teigiamuSk = 0;
+int neigiamuSk = 0;
+
+for (int i = 0; i < skaiciai.Length; i++)
+{
+    if(skaiciai[i] > 0)
+    {
+        teigiamuSk++;
+    }
+    else if(skaiciai[i] < 0)
+    {
+        neigiamuSk++;
+    }
+    suma += skaiciai[i];
+}
+
+double vidurkis = suma / skaiciai.Length;
+
+Console.WriteLine("Suma: " + suma);
+Console.WriteLine("Vidurkis: " + vidurkis);
+Console.WriteLine("Teigiamu skaiciu: " + teigiamuSk);
+Console.WriteLine("Neigiamu skaiciu: " + neigiamuSk);
 ```
 
 10. Klaviatūra renkama skaičių seka (kaip 5-oje užduotyje). Jos ilgis nurodomas skaičiumi n. Parašykite programą, didžiausiam ir mažiausiam sekos skaičiui išrinkti.
 
 ```c#
+Console.WriteLine("Iveskite, kiek bus skaiciu:");
+int n = int.Parse(Console.ReadLine());
+
+int[] skaiciai = new int[n];
+
+for (int i = 0; i < skaiciai.Length; i++)
+{
+    Console.WriteLine("Iveskite skaiciu:");
+    int skaicius = int.Parse(Console.ReadLine());
+    skaiciai[i] = skaicius;
+}
+
+double min = int.MaxValue;
+double max = int.MinValue;
+
+for (int i = 0; i < skaiciai.Length; i++)
+{
+    if(skaiciai[i] > max)
+    {
+        max = skaiciai[i];
+    }
+    if(skaiciai[i] < min)
+    {
+        min = skaiciai[i];
+    }
+}
+
+Console.WriteLine("maziausias: " + min);
+Console.WriteLine("didziausias: " + max);
 ```
 
 11. Architektas suprojektavo salę, kurioje bus n eilių. Pirmoje eilėje stovės k kėdžių, o kiekvienoje kitoje – 2 kėdėmis daugiau, negu prieš tai buvusioje. Parašykite programą, kuri apskaičiuotų, kiek iš viso kėdžių s reikia užsakyti, kad architekto sumanymas būtų įgyvendintas.
@@ -119,6 +191,7 @@ Pvz., kai n = 3, o k = 8, turi būti išvesta: Reikia užsakyti s = 30 kėdžių
 
 
 ```c#
+
 ```
 
 12. Keliamieji metai turi 366 dienas, paprastieji – 365.  Jeigu metai nėra šimtmečio metai, jie yra keliamieji, jeigu dalosi iš 4; Jeigu metai yra šimtmečio metai, jie yra keliamieji, jeigu dalosi iš 400 (pvz., 2000 ir 2400 metai yra keliamieji, o 2100, 2200, 2300 metai – ne keliamieji). Parašykite programą, kuri ekrane parodytų keliamuosius metus laikotarpio, kuris prasideda m-aisiais, o baigiasi n-aisiais metais. 
