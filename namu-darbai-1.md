@@ -83,3 +83,15 @@ switch (variantoNr)
 ```
 
 ### ```while``` ciklas
+
+1. Parašykite programą, kuri nuskaito skaičių x ir atspausdina, kiek rado lyginių skaičių intervale [1 ;x]
+
+
+
+2. Parašykite programą, kuri nuskaito skaičių x ir atspausdina visus skaičius nuo x iki 1-o mažėjančia tvarka.
+
+
+3. Nurodytas natūralusis skaičius n. Parašykite programą, nustatančią, ar jis lygus iš eilės einančių natūraliųjų skaičių (pradedant vienetu) sumai. Pvz.: jei n = 15, tai turi būti išvesta: TAIP. Jei n =12, tai turi būti išvesta: NE.
+
+
+
