@@ -3,26 +3,58 @@
 1. Parašykite programą, kuri išvestų į ekraną 5 kartus tą patį žodį.
 
 ```c#
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Labas");
+}
 ```
 
 2. Parašykite programą, kuri išveda į ekraną skaičius nuo 1 iki 100.
 
 ```c#
+for (int i = 1; i <= 100; i++)
+{
+    Console.WriteLine(i);
+}
 ```
 
 3. Parašykite programą, kuri išveda į ekraną skaičius nuo 1 iki įvesto skaičiaus x.
 
 ```c#
+Console.WriteLine("Iveskite skaiciu:");
+int x = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= x; i++)
+{
+    Console.WriteLine(i);
+}
 ```
 
 4. Parašykite programą, kuri išveda į ekraną skaičius nuo įvesto skaičiaus x iki x+10.
 
 ```c#
+Console.WriteLine("Iveskite skaiciu:");
+int x = int.Parse(Console.ReadLine());
+
+for (int i = x; i <= x + 10; i++)
+{
+    Console.WriteLine(i);
+}
 ```
 
 5. Parašykite programą, kuri išvestų skaičius nuo m iki n.
 
 ```c#
+Console.WriteLine("Iveskite skaiciu m:");
+int m = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite skaiciu n:");
+int n = int.Parse(Console.ReadLine());
+
+for (int i = m; i <= n; i++)
+{
+    Console.WriteLine(i);
+}
 ```
 
 6. Parašykite programą, kuri suskaičiuotų skaičių nuo m iki n sumą 
@@ -30,12 +62,37 @@
 Pvz.: kai m = 5, n = 10, tai s = 45.
 
 ```c#
+Console.WriteLine("Iveskite skaiciu m:");
+int m = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite skaiciu n:");
+int n = int.Parse(Console.ReadLine());
+
+int suma = 0;
+
+for (int i = m; i <= n; i++)
+{
+    suma += i;
+}
+
+Console.WriteLine("Skaiciu nuo m iki n suma yra " + suma);
 ```
 
 7. Parašykite programą, kuri suskaičiuotų skaičiaus n faktorialą 
 ```s= 1 * 2 *... * n.```
 
 ```c#
+Console.WriteLine("Iveskite skaiciu:");
+int n = int.Parse(Console.ReadLine());
+
+int faktorialas = 0;
+
+for (int i = 1; i <= n; i++)
+{
+    faktorialas *= i;
+}
+
+Console.WriteLine("Faktorialas: " + faktorialas);
 ```
 
 8. Parašykite programą, kuri suskaičiuotų, kiek yra triženklių skaičių, besidalinančių iš keturių ir išvestų juos į ekraną.
