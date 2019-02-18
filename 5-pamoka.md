@@ -205,22 +205,43 @@ Pvz., kai m = 1898, o n = 1910, tai turi būti išvesta: Keliamieji metai yra 19
 1. Deklaruokite sveikų skaičių masyvą kuriame bus 10 skaičių. Įdėkite į masyvą skaičius, šitaip masyvas[0] = 10; 
 
 ```c#
+int[] skaiciai = new int[10];
+skaiciai[0] = 1;
+skaiciai[1] = 10;
+skaiciai[2] = 19;
+skaiciai[3] = 78;
+skaiciai[4] = 1;
+skaiciai[5] = 16;
+skaiciai[6] = 14;
+skaiciai[7] = 3;
+skaiciai[8] = 12;
+skaiciai[9] = 9;
 ```
 
 2. Deklaruokite tekstų masyvą, kuriame bus 5 tekstai (string). Deklaruojant iš karto ir nurodykite šių tekstų reikšmes (tarp riestinių skliaustų).
 
 ```c#
+string[] tekstai = { "vienas", "du", "trys", "keturi", "penki" };
 ```
 
 3. Atspausdinkite kiekvieną tekstų masyvo elementą naudojantis for ciklu.
 
 ```c#
+for (int i = 0; i < tekstai.Length; i++)
+{
+    Console.WriteLine(tekstai[i]);
+}
 ```
 
 4. Atspausdinkite kiekvieną skaičių masyvo elementą pakeltą kvadratų, t.y. Jei masyve turite skaičius 1, 2 , 3 ir t.t., tai atspausdini turite 1, 4, 9 ir t.t.
 
 ```c#
+for (int i = 0; i < skaiciai.Length; i++)
+{
+    Console.WriteLine(skaiciai[i]*skaiciai[i]);
+}
 ```
+
 5. Lietuvos hidrometeorologijos tarnyba kaupia įvairiose Lietuvos vietovėse vasarą iškritusių kritulių stebėjimo duomenis. 
 Parenkite programą, kuri pateiktų informaciją apie lietingas dienas:
 * Kiek mm iškrito kiekvieną iš dienų;
